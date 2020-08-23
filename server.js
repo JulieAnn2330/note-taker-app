@@ -32,7 +32,7 @@
     g. .git ignore file for node_modules -- DONE
     h. Code app.js file -- DONE
         i. Find way to connect to html files -- DONE
-    i. Deploy to heroku -- notes on pg 94 of notebook
+    i. Deploy to heroku -- notes on pg 94 of notebook -- DONE
 */
 
 const express = require('express');
