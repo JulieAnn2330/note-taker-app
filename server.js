@@ -53,7 +53,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //Notes HTML & API Routes
 app.get("/notes", function(req, res) {
-    res.sendFile(path.join(__dirname, "../Develop/public/notes.html"));
+    res.sendFile(path.join(__dirname, "./Develop/public/notes.html"));
   });
 
   app.get("/api/notes", function(req, res) {
@@ -65,7 +65,7 @@ app.get("/api/notes/:id", function(req, res) {
     res.json(savedNotes[Number(req.params.id)]);
 });
 
-app.get("/", function(req, res) {
+app.get("*", function(req, res) {
     res.sendFile(path.join(__dirName, "./Develop/public/index.html"));
   });
 
