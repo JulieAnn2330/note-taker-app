@@ -66,7 +66,7 @@ app.get("/api/notes/:id", function(req, res) {
 });
 
 app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirName, "../Develop/public/index.html"));
+    res.sendFile(path.join(__dirName, "./Develop/public/index.html"));
   });
 
 //Save note to db.json
