@@ -21,6 +21,7 @@
   "homepage": "https://github.com/JulieAnn2330/note-taker#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "fs": "0.0.1-security",
     "inquirer": "^7.3.3",
     "nodemon": "^2.0.4",
     "uuid": "^8.3.0"
