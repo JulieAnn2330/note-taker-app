@@ -1,7 +1,7 @@
 <body>
 <div id = "top">
 
-<h2>Note Taker</h2> <a href="#license"><img src= "https://img.shields.io/badge/License-MIT-blue.svg"></a><br>
+<h2>Note Taker App</h2> <a href="#license"><img src= "https://img.shields.io/badge/License-MIT-blue.svg"></a><br>
 
 <hr color= "slateblue" noshade>
 
@@ -38,7 +38,7 @@ HTML,Bootstrap,JavaScript,AJAX,node.js,Heroku</p><br>
 <hr color= "slateblue" noshade>
 
 <h3 id='use'>How to Use the Project</h3>
-<p>To use the project you go to https:// https://infinite-crag-29387.herokuapp.com, which will bring up the app. Click the Get Started button on the home page to go to the notes page. On the notes page if you have previously saved notes they will display down the left side of the page. Enter a title by clicking in the box and overwriting the placeholder text, repeat the step for the note content. Click the save button in the upper right hand corner and your note will appear on the left side of the screen. Click on a note to view and click the trash can button to delete the note. Clicking on NoteTaker in the upper left hand corner will take you back to the home page.</p><br>
+<p>To use the project go to https:// https://infinite-crag-29387.herokuapp.com, which will bring up the app. Click the Get Started button on the home page to go to the notes page. On the notes page if you have previously saved notes they will display down the left side of the page. Enter a title by clicking in the box and overwriting the placeholder text, repeat the step for the note content. Click the save button in the upper right hand corner and your note will appear on the left side of the screen. Click on a note to view and click the trash can button to delete the note. Clicking on NoteTaker in the upper left hand corner will take you back to the home page.</p><br>
 <a href="#top" id="start">(Back to Top of Page)</a><br>
 <br>
 <hr color= "slateblue" noshade>
