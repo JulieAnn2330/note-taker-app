@@ -1,80 +1,69 @@
-# Unit 11 Express Homework: Note Taker
+<body>
+<div id = "top">
 
-## Description
+<h2>Note Taker</h2> <a href="#license"><img src= "https://img.shields.io/badge/License-MIT-blue.svg"></a><br>
 
-Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
+<hr color= "slateblue" noshade>
 
-* The application frontend has already been created, it's your job to build the backend and connect the two.
+<h2>Table of Contents:</h2>
+<a href="#description" class="contents">1. Description of Project</><br>
+<a href="#technology" class="contents">2. Technologies Used</a><br>
+<a href="#installation" class="contents">3. Installation Directions</a><br>
+<a href="#use" class="contents">4. How to Use the Project</a><br>
+<a href="#contributors" class="contents">5. Contributing</a><br> 
+<a href="#questions" class="contents">6. Questions or Comments</a><br>
+<a href="#license" class="contents">7. License</a><br>
+<a href="#screenshot" class="contents">8. Screenshots of Project</><br>
+<br>
 
-* The following HTML routes should be created:
+<hr color= "slateblue" noshade>
 
-  * GET `/notes` - Should return the `notes.html` file.
+<h3 id='description'>Description of Project</h3>
+<p>This app allows a user to create and delete notes in real time. It also displays all notes down the left side of the page for a comprehensive view. This project was homework for the University of Kansas BootCamp. This project is great for busy people who are looking for a convenient way to create and store notes. I learned a lot of things about this project that were not taught or even referenced in class from outside sources, specifically Traversy Media's Express Crash Course and google for deploying projects with Heroku. I feel that more time should have been spent in class discussing file structure and naming conventions in order for this project to have been suceessful quicker. I completely destructed the file structure that was given to us for two reasons: 1. The sever.js folder had to be in the root folder in order to deploy to Heroku, based on errors I was getting and answers I found on Google. 2. Once I moved the server.js folder to the root folder, my notes page would not display properly. I came to the assumption that for it run it needed to be in the same folder as the db and public files. Once I moved everything out of the Develop folder that was provided to us, I was able to run the app correctly and deploy to Heroku.  My project stands out due to the unique id I am assigning using a uuid generator. I found out about this through the Traversy tutorial. My project features a generated unique id using the uuid module and has the ability to create, save, view and delete notes. One feature that I would like to add is the ability to update notes, but I haven't figured that out yet.</p><br>
+<a href="#top" id="start">(Back to Top of Page)</a><br>
+<br>
+<hr color= "slateblue" noshade>
 
-  * GET `*` - Should return the `index.html` file
+<h3 id='techology'>Technologies Used</h3>
+<p>This project incoporates the following tecnologies:<br>
+HTML,Bootstrap,JavaScript,AJAX,node.js</p><br>
+<a href="#top" id="start">(Back to Top of Page)</a><br>
+<br>
+<hr color= "slateblue" noshade>
 
-* The application should have a `db.json` file on the backend that will be used to store and retrieve notes using the `fs` module.
+<h3 id='installation'>Installation</h3>
+<p>No steps are requird to install the project.</p><br>
+<a href="#top" id="start">(Back to Top of Page)</a><br>
+<br>
+<hr color= "slateblue" noshade>
 
-* The following API routes should be created:
+<h3 id='use'>How to Use the Project</h3>
+<p>To use the project you go to https:// https://infinite-crag-29387.herokuapp.com, which will bring up the app. Click the Get Started button on the home page to go to the notes page. On the notes page if you have previously saved notes they will display down the left side of the page. Enter a title by clicking in the box and overwriting the placeholder text, repeat the step for the note content. Click the save button in the upper right hand corner and your note will appear on the left side of the screen. Click on a note to view and click the trash can button to delete the note. Clicking on NoteTaker in the upper left hand corner will take you back to the home page.</p><br>
+<a href="#top" id="start">(Back to Top of Page)</a><br>
+<br>
+<hr color= "slateblue" noshade>
 
-  * GET `/api/notes` - Should read the `db.json` file and return all saved notes as JSON.
+<h3 id='contributors'>Contributing to the Project</h3>
+<p>Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-  * POST `/api/notes` - Should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client.
+Please make sure to update tests as appropriate.</p><br>
+<a href="#top" id="start">(Back to Top of Page)</a><br>
+<br>
+<hr color= "slateblue" noshade>
 
-  * DELETE `/api/notes/:id` - Should receive a query parameter containing the id of a note to delete. This means you'll need to find a way to give each note a unique `id` when it's saved. In order to delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
+<h3 id='questions'>For Questions or Comments</h3>
+<p>Please contact me at github.com/JulieAnn2330 or julie.schaub@midtownfullstack.com for questions or comments.</p><br>
+<a href="#top" id="start">(Back to Top of Page)</a><br>
+<br>
+<hr color= "slateblue" noshade>
 
-## User Story
+<h3 id='license'>License</h3>
+<p>This project incorporates the following license: <a href="https://opensource.org/licenses/MIT">MIT</a></p>
+<a href="#top" id="start">(Back to Top of Page)</a><br>
 
-AS A user, I want to be able to write and save notes
+<hr color= "slateblue" noshade>
 
-I WANT to be able to delete notes I've written before
-
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
-
-## Business Context
-
-For users that need to keep track of a lot of information, it's easy to forget or be unable to recall something important. Being able to take persistent notes allows users to have written information available when needed.
-
-## Acceptance Criteria
-
-Application should allow users to create and save notes.
-
-Application should allow users to view previously saved notes.
-
-Application should allow users to delete previously saved notes.
-
-## Deploying the App
-
-You will not be able to deploy your server side code on GitHub pages. This app should be deployed on Heroku. Carefully follow the [Heroku Guide](../04-Supplemental/HerokuGuide.md) for getting your app deployed on Heroku.
-
-- - -
-
-## Commit Early and Often
-
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
-
-* Your commit history is a signal to employers that you are actively working on projects and learning new skills.
-
-* Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
-
-Follow these guidelines for committing:
-
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
-
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
-
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
-
-* Test your application before you commit to ensure functionality at every step in the development process.
-
-We would like you to have well over 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* The URL of the deployed application. This should be the link to the url provided by Heroku. Be sure not to submit a link to the Heroku dashboard.
-
-* The URL of the GitHub repository
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+<h3 id='screenshot'>Screenshots</h3>
+    
+</body>
+</html> 
