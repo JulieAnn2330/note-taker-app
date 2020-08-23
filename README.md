@@ -26,7 +26,7 @@
 
 <h3 id='techology'>Technologies Used</h3>
 <p>This project incoporates the following tecnologies:<br>
-HTML,Bootstrap,JavaScript,AJAX,node.js</p><br>
+HTML,Bootstrap,JavaScript,AJAX,node.js,Heroku</p><br>
 <a href="#top" id="start">(Back to Top of Page)</a><br>
 <br>
 <hr color= "slateblue" noshade>
