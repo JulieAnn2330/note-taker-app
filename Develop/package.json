@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/JulieAnn2330/note-taker#readme",
   "dependencies": {
+    "app": "^0.1.0",
     "express": "^4.17.1",
     "inquirer": "^7.3.3",
     "nodemon": "^2.0.4",
